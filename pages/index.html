@@ -1,79 +1,80 @@
 <html>
 
 <head>
-	<title>Сторінка Вікторії</title>
+  <title>Сторінка Вікторії</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <h1>Мене звати <em>Вікуся</em>!</h1>
-    <h2><em>А тепер більш офіційно :)</em> Прошу любити та цінувати - Полякова Вікторія Сергіївна</h2>
+  <header class="header">
+    <h1 class="header-title">Мене звати <em>Вікуся</em>!</h1>
+    <h2 class="header-title"><em>А тепер більш офіційно :)</em> Прошу любити та цінувати - Полякова Вікторія Сергіївна</h2>
   </header>
 
-<section>
-	<p>Мені <strong>21 рік</strong>, за знаком зодіаку - <strong>водолій</strong>, майбутня професія - <strong>QA manual</strong>, а по життю я просто <strong>хороша людина!</strong></p>
+  <section class="section">
+    <p class="text-block">Мені <strong>21 рік</strong>, за знаком зодіаку - <strong>водолій</strong>, майбутня професія - <strong>QA manual</strong>, а по життю я просто <strong>хороша людина!</strong></p>
 
-	<p>Моє прекрасне фото:</p>
+    <p class="text-block">Моє прекрасне фото:</p>
 
-	<img src="C:\Users\sasho\Desktop\VikaDataFolder\Hello shitty gitty\photos\photo_2024-08-21_21-28-06.jpg" width="195" height="256">
+    <img class="image" src="C:\Users\sasho\Desktop\VikaDataFolder\Hello shitty gitty\photos\photo_2024-08-21_21-28-06.jpg" width="195" height="256">
 
-	<table>
-		<tr>
-			<th>Дата народження:</th>
-			<th>Освіта:</th>
-			<th>Досвід роботи:</th>
-		</tr>
-		<tr>
-			<td>10.02.2003</td>
-			<td>Філологія. Прикладна лінгвістика (бакалавр). <a href='https://duan.edu.ua/'>Дніпропетровський університет імені Альфреда нобеля</a></td>
-			<td>відсутній</td>
-		</tr>
-	</table>
+    <table class="table">
+      <tr>
+        <th>Дата народження:</th>
+        <th>Освіта:</th>
+        <th>Досвід роботи:</th>
+      </tr>
+      <tr>
+        <td>10.02.2003</td>
+        <td>Філологія. Прикладна лінгвістика (бакалавр). <a href='https://duan.edu.ua/'>Дніпропетровський університет імені Альфреда Нобеля</a></td>
+        <td>відсутній</td>
+      </tr>
+    </table>
 
-<h4><strong>Мови:</strong></h4>
-<ul>
-	<li>українська</li>
-	<li>англійська</li>
-	<li>російська</li>
-</ul>
+    <h4><strong>Мови:</strong></h4>
+    <ul class="list">
+      <li class="list-item">українська</li>
+      <li class="list-item">англійська</li>
+      <li class="list-item">російська</li>
+    </ul>
 
-<h4><strong>Хобі:</strong></h4>
-<ol>
-	<li>Гра на гітарі</li>
-	<li>Відвідування кінотеатру</li>
-	<li>Активні прогулянки з друзями</li>
-</ol>
+    <h4><strong>Хобі:</strong></h4>
+    <ol class="ordered-list">
+      <li class="ordered-list-item">Гра на гітарі</li>
+      <li class="ordered-list-item">Відвідування кінотеатру</li>
+      <li class="ordered-list-item">Активні прогулянки з друзями</li>
+    </ol>
 
-<form action='/submit'>
-	<label>Як вас звати?</label>
-	<input type='text'>
-</form>
-<form action='/submit'>
-	<label>Скільки вам років?</label>
-	<input type="number">
-</form>
-<form action='/submit'>
-	<label>Коли вас привітати з Днем народження?</label>
-	<input type='date'>
-</form>
-<form action='/submit'>
-	<label for='gender'>Яка ваша стать?</label>
-	<select id='gender' name='gender'>
-		<option value='male'>Чоловіча</option>
-		<option value='female'>Жіноча</option>
-		<option value='other'>Інша</option>
-	</select>
-</form>
-<form action='/submit'>
-	<label>Розкажи мені свій секретний секрет <em>(я нікому не скажу)</em>:</label>
-	<textarea name='message' rows='10' cols='30'></textarea>
-</form>
-</section>
+    <form class="form" action='/submit'>
+      <label class="form-label">Як вас звати?</label>
+      <input class="form-input" type='text'>
+    </form>
+    <form class="form" action='/submit'>
+      <label class="form-label">Скільки вам років?</label>
+      <input class="form-input" type="number">
+    </form>
+    <form class="form" action='/submit'>
+      <label class="form-label">Коли вас привітати з Днем народження?</label>
+      <input class="form-input" type='date'>
+    </form>
+    <form class="form" action='/submit'>
+      <label class="form-label" for='gender'>Яка ваша стать?</label>
+      <select class="form-select" id='gender' name='gender'>
+        <option value='male'>Чоловіча</option>
+        <option value='female'>Жіноча</option>
+        <option value='other'>Інша</option>
+      </select>
+    </form>
+    <form class="form" action='/submit'>
+      <label class="form-label">Розкажи мені свій секретний секрет <em>(я нікому не скажу)</em>:</label>
+      <textarea class="form-textarea" name='message' rows='10' cols='30'></textarea>
+    </form>
+  </section>
 
-  <footer>
-  	<h4><a href="contact.html">Контакти</a></h4>
-  	<h4><a href="gallery.html">Фото</a></h4>
-  	<h5>Ще не забули, як мене звати?</h5>
+  <footer class="footer">
+    <h4><a class="footer-link" href="contact.html">Контакти</a></h4>
+    <h4><a class="footer-link" href="gallery.html">Фото</a></h4>
+    <h5 class="footer-text">Ще не забули, як мене звати?</h5>
   </footer>
 
 </body>
